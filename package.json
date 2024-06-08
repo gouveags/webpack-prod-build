@@ -21,7 +21,8 @@
     "build": "webpack --config webpack.prod.js",
     "postbuild": "npm run start:server",
     "start:server": "http-server dist -p 3000",
-    "dev": "webpack serve --open"
+    "dev": "webpack serve --open",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
