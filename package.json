@@ -15,7 +15,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "npm run webpack",
-    "build-server": "npm-run-all build server",
     "webpack": "webpack",
     "server": "http-server dist -p 3000",
     "test": "react-scripts test",
