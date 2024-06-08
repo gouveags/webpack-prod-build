@@ -8,10 +8,10 @@ module.exports.webpackDevelopment = {
     port: 3000,
   },
   plugins: [
+    // http://localhost:3000/report.html
     new BundleAnalyzerPlugin({
       analyzerMode: "static",
       openAnalyzer: false,
-      reportFilename: "bundle-report.html",
     }),
   ],
 };
