@@ -3,22 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.15.19",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "install": "^0.13.0",
     "lodash": "^4.17.21",
+    "npm": "^10.8.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "npm run webpack",
-    "webpack": "webpack",
-    "server": "http-server dist -p 3000",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "webpack --config webpack.prod.js",
+    "postbuild": "npm run start:server",
+    "start:server": "http-server dist -p 3000",
+    "dev": "webpack serve --open"
   },
   "eslintConfig": {
     "extends": [
