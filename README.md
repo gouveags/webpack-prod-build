@@ -1,5 +1,3 @@
-```markdown
-
 # webpack-prod-build
 
 This project demonstrates setting up Webpack to create a production build for a React application, optimizing the build process for performance and efficiency.
