@@ -9,15 +9,13 @@ This project demonstrates setting up Webpack to create a production build for a 
 - [Project Structure](#project-structure)
 - [Webpack Configuration](#webpack-configuration)
 - [Build Process](#build-process)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
 To get started, clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/yourusername/webpack-prod-build.git
+git clone https://github.com/gouveags/webpack-prod-build.git
 cd webpack-prod-build
 npm install
 ```
@@ -36,7 +34,7 @@ To create a production build:
 npm run build
 ```
 
-If you want to run a live server of the production build, you should execute both in the given order(try opening more tha one instance of you CLI):
+If you want to run a live server of the production build, you should execute both in the given order(try opening more than one instance of you CLI):
 
 ```bash
 npm run build
@@ -154,11 +152,3 @@ module.exports = {
 - The output is saved in the `dist` directory with hashed filenames for caching.
 - `HtmlWebpackPlugin` generates an HTML file to include the bundled JavaScript.
 - `CleanWebpackPlugin` ensures the `dist` directory is cleaned before each build.
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or additions.
-
-## License
-
-```
